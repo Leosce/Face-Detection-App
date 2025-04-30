@@ -3,3 +3,4 @@ streamlit_webrtc
 opencv-python-headless
 av
 ultralytics
+omegaconf
