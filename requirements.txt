@@ -1,4 +1,5 @@
 torch
 streamlit_webrtc
+opencv-python
 av
 ultralytics
