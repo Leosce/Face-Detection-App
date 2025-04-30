@@ -29,7 +29,7 @@ class YOLOProcessor(VideoProcessorBase):
         img = frame.to_ndarray(format="bgr24")
 
         # Resize for faster detection
-        img_small = cv2.resize(img, (640, 480))  # Try a bit larger
+        img_small = cv2.resize(img, (320, 240))  # Try a bit larger
 
         # Perform inference
         results = self.model(img_small, conf=0.3)
