@@ -10,15 +10,8 @@ import numpy as np
 # ==== Setup ====
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "yolov8n-face.pt")
-
-if not os.path.exists(model_path):
-    st.error(f"❌ Model file not found: {model_path}")
-    st.stop()
-
 # Load YOLO model once
-model = YOLO(model_path)
+model = YOLO("yolov8n-face.pt")
 model.fuse()  # Optimize model for inference
 
 st.title("🎯 Real-Time Face Detection with YOLOv8")
