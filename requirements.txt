@@ -1,6 +1,6 @@
-torch
-streamlit_webrtc
+streamlit
 opencv-python-headless
-av
+numpy
 ultralytics
-omegaconf
+streamlit_webrtc
+torch
